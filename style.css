@@ -1,0 +1,16 @@
+
+body {
+    margin: 0;
+    color: #E2E8F0;
+    background-color: #0F172A;
+}
+
+.header,.footer {
+    max-width: 1218px;
+    margin: 0 auto;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
