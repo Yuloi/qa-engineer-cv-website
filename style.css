@@ -1,16 +1,34 @@
-
+*{
+    border: solid white 1px;
+}
 body {
     margin: 0;
     color: #E2E8F0;
     background-color: #0F172A;
+}
+.wrapper,nav,.main-hero{
+display: flex;
+}
+.wrapper {
+    flex-direction: column;
+    gap: 3rem;
 }
 
 .header,.footer {
     max-width: 1218px;
     margin: 0 auto;
 }
-nav{
-    display: flex;
+nav {
     justify-content: center;
     gap: 3rem;
+}
+.main-hero {
+    justify-content: space-evenly;
+    height: 60svh;
+}
+.main-hero .bio{
+    flex-basis: 50rem;
+}
+.main-hero .photo {
+    flex-basis: 30rem;
 }
