@@ -2,6 +2,7 @@
     --primary-bg-color: #2d2d2d;
     --primary-dark-color:#1C1C1C;
     --primary-text-color: #f0eff4;
+    --secondary-grey-color:#6c6c6c;
   }
 *,
 *::before,
@@ -114,7 +115,9 @@ nav {
     gap: 2rem;
 }
 .skills-list > div, .interests-list > div {
-    border: solid white 1px;
+    background-color: var(--primary-dark-color);
+    border: solid var(--secondary-grey-color) 1px;
+    border-radius: 10px;
     flex-basis: 130px;
     height: 150px;
 }
@@ -134,6 +137,9 @@ nav {
     background-image: url(./data/sprite.png);
     background-repeat: no-repeat;
     background-size: 400px;
+}
+.skills-single.js {
+    border-top-color: orange;
 }
 .sprite.js        { background-position: -40px  -69px; }
 .sprite.ts        { background-position: -110px -69px; }
