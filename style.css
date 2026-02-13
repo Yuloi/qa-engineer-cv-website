@@ -121,6 +121,50 @@ nav {
 .hidden {
     display: none;
 }
+.skills-single,.interests-single{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* sprite */
+/* TODO: FIX POSITIONS */
+.sprite {
+    width: 50px;
+    height: 55px;
+    background-image: url(./data/sprite.png);
+    background-repeat: no-repeat;
+    background-size: 400px;
+}
+.sprite.js        { background-position: -40px  -69px; }
+.sprite.ts        { background-position: -110px -69px; }
+.sprite.git       { background-position: -175px -68px; }
+.sprite.playwright{ background-position: -240px -69px; }
+.sprite.cypress   { background-position: -320px -69px; }
+
+.sprite.postman   { background-position: -40px  -138px; }
+.sprite.cicd      { background-position: -110px -138px; }
+.sprite.htmlcss   { background-position: -175px -138px; }
+.sprite.jira      { background-position: -240px -138px; }
+.sprite.azure     { background-position: -320px -138px; }
+
+.sprite.graphql   { background-position: -40px  -207px; }
+.sprite.api       { background-position: -110px -207px; }
+.sprite.testtools { background-position: -175px -207px; }
+.sprite.datadog   { background-position: -240px -207px; }
+.sprite.functional{ background-position: -320px  -207px; }
+
+.sprite.mobile    { background-position: -40px -207px; }
+.sprite.load      { background-position: -110px -207px; }
+.sprite.cat       { background-position: -250px -207px; }
+.sprite.gym       { background-position: -320px -207px; }
+.sprite.travel    { background-position: -390px -207px; }
+
+.sprite.organize  { background-position: -460px -207px; }
+.sprite.cooking   { background-position: -40px  -276px; }
+.sprite.walking   { background-position: -110px -276px; }
+.sprite.music     { background-position: -180px -276px; }
+.sprite.craft     { background-position: -250px -276px; }
+.sprite.gaming    { background-position: -320px -276px; }
 
 /* Projects */
 .project-list {
