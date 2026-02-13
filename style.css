@@ -1,3 +1,8 @@
+:root {
+    --primary-bg-color: #2d2d2d;
+    --header-color:#1C1C1C;
+    --primary-text-color: #f0eff4;
+  }
 *,
 *::before,
 *::after {
@@ -6,40 +11,77 @@
 /* *{
     border: solid white 1px;
 } */
+/* Fonts */
+h1 { 
+    font-size: 70px;
+}
+h3.title {
+    font-size: 30px;
+}
+.bio > div {
+    font-size: 20px;
+}
+/* General */
 body {
     margin: 0;
-    color: #E2E8F0;
-    background-color: #0F172A;
+    color: var(--primary-text-color);
+    background-color: var(--primary-bg-color);
+    font-family: "Electrolize", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 img {
     max-width: 100%;
     height: auto;
 }
+
 .flex{
 display: flex;
 }
 .wrapper {
     flex-direction: column;
-    gap: 3rem;
+    gap: 5rem;
 }
 
-.header,.footer,.skills {
+.header,.footer,.skills,.experience-list,form,.section-title {
     max-width: 1218px;
     margin: 0 auto;
 }
+/* Header and main banner */
+.header{
+    background-color: var(--header-color);;
+    opacity: 90%;
+    border: solid var(--header-color) 1px;
+    border-radius: 30px;
+    width: 600px;
+    height: 60px;
+    position: sticky;
+    top: 30px;
+    left: 55%;
+}
 nav {
     justify-content: center;
+    align-items: center;
+    height: 100%;
     gap: 3rem;
+
 }
 .main-hero {
-    justify-content: space-evenly;
-    height: 60svh;
+    justify-content: center;
+    height: 70svh;
+    align-items: center;
+    /* border: solid white 1px; */
 }
 .main-hero .bio{
     flex-basis: 50rem;
+    /* border: solid white 1px; */
 }
 .main-hero .photo {
     flex-basis: 30rem;
+    /* border: solid white 1px; */
+}
+.photo > img {
+    border-radius: 500px;
 }
 
 /* SKills section */
@@ -84,11 +126,36 @@ align-items: center;
     width: 100%;
 }
 .project-info {
-
     flex-direction: column;
     flex-basis: 40%;
 }
 .project-stack{
-
     flex-basis: 10%;
+}
+/* Experience-list */
+.experience-list {
+    flex-direction: column;
+    border: solid white 1px;
+    gap: 3rem;
+}
+.experience-block {
+    border: solid white 1px;
+}
+/* Form */
+form {
+    flex-direction: column;
+    gap: 0.5rem;
+    border: solid white 1px;
+    width: 55%;
+    max-width: 100%;
+}
+.contact-data {
+    gap: 0.5rem;
+    border: solid white 1px;
+}
+.contact-data > div {
+    flex-basis: 50%;
+}
+input,textarea,button {
+    width: 100%;
 }
