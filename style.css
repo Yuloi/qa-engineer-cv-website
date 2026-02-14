@@ -227,11 +227,32 @@ nav {
 /* Experience-list */
 .experience-list {
     flex-direction: column;
-    border: solid white 1px;
     gap: 3rem;
 }
 .experience-block {
     border: solid white 1px;
+    padding-left: 1rem;
+    border-radius: 30px;
+    background-color: var(--primary-dark-color);
+}
+.job-title {
+    font-size: 24px;
+    margin-bottom: 0;
+    
+}
+.company-name {
+    font-size: 20px;
+    margin: 0;
+    margin-top: 10px;
+    opacity: 80%;
+    font-weight: 400;
+}
+.dates{
+    font-size: 14px;
+    opacity: 70%;
+}
+.experience-block p:nth-child(4) {
+    font-size: 18px;
 }
 /* Form */
 form {
