@@ -3,6 +3,7 @@
     --primary-dark-color:#1C1C1C;
     --primary-text-color: #f0eff4;
     --secondary-grey-color:#6c6c6c;
+    --pink-neon-color:#ff006d
   }
 *,
 *::before,
@@ -50,7 +51,7 @@ display: flex;
     padding-left: 1rem;
 }
 
-.header,.footer,.skills,.experience-list,form,.section-title {
+.header,.footer,.skills,.experience-list,form,.section-title,.contact-options {
     max-width: 1218px;
     margin: 0 auto;
 }
@@ -58,7 +59,7 @@ display: flex;
 .header{
     background-color: var(--primary-dark-color);
     opacity: 90%;
-    border: solid var(--primary-dark-color) 1px;
+    border: solid var(--pink-neon-color) 1px;
     border-radius: 30px;
     width: 600px;
     height: 60px;
@@ -134,6 +135,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 /* sprite */
 /* TODO: FIX POSITIONS */
@@ -150,23 +152,28 @@ nav {
 .sprite.js        { background-position: -40px  -69px; }
 .sprite.ts        { background-position: -110px -69px; }
 .sprite.git       { background-position: -175px -68px; }
-.sprite.playwright{ background-position: -240px -69px; }
-.sprite.cypress   { background-position: -320px -69px; }
+.sprite.playwright{
+    width: 60px;
+    height: 55px;
+    background-position: -235px -69px; }
+.sprite.cypress   { background-position: -310px -69px; }
 
 .sprite.postman   { background-position: -40px  -138px; }
 .sprite.cicd      { background-position: -110px -138px; }
 .sprite.htmlcss   { background-position: -175px -138px; }
 .sprite.jira      { background-position: -240px -138px; }
-.sprite.azure     { background-position: -320px -138px; }
+.sprite.azure     { background-position: -175px -207px; }
 
 .sprite.graphql   { background-position: -40px  -207px; }
 .sprite.api       { background-position: -110px -207px; }
-.sprite.testtools { background-position: -175px -207px; }
-.sprite.datadog   { background-position: -240px -207px; }
-.sprite.functional{ background-position: -320px  -207px; }
+.sprite.testtools { background-position: -310px -138px; }
+.sprite.datadog   {    width: 60px;
+    height: 55px; background-position: -240px -207px; }
+.sprite.functional{    width: 60px;
+    height: 55px; background-position: -175px  -270px; }
 
-.sprite.mobile    { background-position: -40px -207px; }
-.sprite.load      { background-position: -110px -207px; }
+.sprite.mobile    { background-position: -240px -268px; }
+.sprite.load      { background-position: -310px  -270px; }
 .sprite.cat       { background-position: -250px -207px; }
 .sprite.gym       { background-position: -320px -207px; }
 .sprite.travel    { background-position: -390px -207px; }
@@ -275,7 +282,20 @@ form {
 input,textarea,button {
     width: 100%;
 }
+/* Contact links */
+.contact-options {
+    justify-content: center;
+    gap: 2rem;
+}
+.contact-options > div {
+    flex-basis: 40px;
+}
 
 .footer {
     margin-bottom: 4rem;
+    flex-direction: column;
+    gap: 1rem;
+}
+.footer div.text {
+    font-size: 18px;
 }
