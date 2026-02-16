@@ -17,7 +17,7 @@ h1 {
     font-size: 70px;
 }
 h3.title {
-    font-size: 30px;
+    font-size: 25px;
 }
 .bio > div {
     font-size: 20px;
@@ -255,20 +255,27 @@ nav {
     font-size: 18px;
 }
 /* Form */
+/* .contact {
+    display: none;
+} */
 form {
     flex-direction: column;
     gap: 0.5rem;
-    border: solid white 1px;
+
     width: 55%;
     max-width: 100%;
 }
 .contact-data {
     gap: 0.5rem;
-    border: solid white 1px;
+
 }
 .contact-data > div {
     flex-basis: 50%;
 }
 input,textarea,button {
     width: 100%;
+}
+
+.footer {
+    margin-bottom: 4rem;
 }
