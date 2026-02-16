@@ -1,4 +1,7 @@
 export function switchTab(currentTab,newTab) {
-        currentTab.classList.addClass('hidden')
-        newTab.classList.removeClass('hidden')
+        if(currentTab.classList.contains('hidden')){
+               currentTab.classList.remove('hidden')
+               newTab.classList.add('hidden')
+        }
+
 }

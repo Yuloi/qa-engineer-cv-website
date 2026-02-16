@@ -1,6 +1,10 @@
-import { switchTab } from "./tab-switch"
+import { switchTab } from "./tab-switch.js"
 
-const interestTab = document.querySelector('.interests-list')
-const skillTab = document.querySelector('.skills-list')
+const interestOption = document.querySelector('.skills-option')
+const skillOption = document.querySelector('.interests-option')
+const skillList = document.querySelector('.skills-list')
+const interestsList = document.querySelector('.interests-list')
 
-interestTab.addEventListener('click', switchTab(skillTab,interestTab))
+interestOption.addEventListener("click", ()=>switchTab(skillList,interestsList))
+skillOption.addEventListener("click", ()=>switchTab(interestsList,skillList))
+
