@@ -4,115 +4,277 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+    <script src="./script/main.js" type="module" async></script>
     <title>Yuliya Kazakevich</title>
 </head>
 
 <body>
-    <section class="header">
-        <nav>
+    <div class="wrapper flex">
+        <section class="header">
+            <nav class="flex">
 
-            <div>Technical skills</div>
-            <div>Projects</div>
-            <div>Experience</div>
-            <div>Contact</div>
+                <div>Skills</div>
+                <div>Projects</div>
+                <div>Experience</div>
+                <div>Contact</div>
 
-        </nav>
-    </section>
-    <section class="main-hero">
-        <div>
-            <h1>Yuliya Kazakevich</h1>
-            <div>Quality Assurance Engineer</div>
-            <div>Short summary</div>
-        </div>
-        <div><img src="" alt="img"></div>
-    </section>
-    <section class="skills">
-        <div class="tab-switch">
-            <div>Skills</div>
-            <div>Interests</div>
-        </div>
-        <div class="skills-list">
-            <div>GitHub</div>
-            <div>GitHub</div>
-            <div>GitHub</div>
-            <div>GitHub</div>
-            <div>GitHub</div>
-            <div>GitHub</div>
-            <div>GitHub</div>
-            <div>GitHub</div>
-            <div>GitHub</div>
-        </div>
-        <div class="interests-list">
-            <div>My cat</div>
-            <div>My cat</div>
-            <div>My cat</div>
-            <div>My cat</div>
-            <div>My cat</div>
-            <div>My cat</div>
-            <div>My cat</div>
-            <div>My cat</div>
-            <div>My cat</div>
-        </div>
-    </section>
-    <section class="projects">
-        <div class="project-block">
-            <div><img src="" alt="img"></div>
-            <div>
-                <h3>Personal website</h3>
-                <p>Something about project small summary </p>
+            </nav>
+        </section>
+        <section class="main-hero flex">
+            <div class="bio">
+                <h1>My name is <span><br>Yuliya Kazakevich</span></h1>
+                <h3 class="title">Quality Assurance Engineer</h3>
+                <div>I&rsquo;m a QA engineer with 6 years of experience, in love with quality, good processes, and
+                    constant improvements. I enjoy learning new things, making sure everything works as it should,
+                    sharing my passion with teammates, mentoring others, and being part of a supportive team.
+                    <br>
+                    I&rsquo;m in love with debugging tricky issues, understanding why something broke, and solving the
+                    whole puzzle so no user scenario is missed
+                </div>
             </div>
-            <div class="project-stack">
-                <div>HTML5</div>
-                <div>FlexBox</div>
-                <div>Grid</div>
-                <div>JavaScript</div>
+            <div class="photo"><img src="/data/avatar.png" alt="img"></div>
+        </section>
+        <section class="skills flex">
+            <div class="tab-switch flex">
+                <div class="skills-option">Skills</div>
+                <div class="interests-option">Interests</div>
             </div>
-        </div>
-        <div class="project-block">
-            <div><img src="" alt="img"></div>
-            <div>
-                <h3>Testora</h3>
-                <p>Something about project small summary </p>
-            </div>
-            <div class="project-stack">
-                <div>HTML5</div>
-                <div>FlexBox</div>
-                <div>Grid</div>
-                <div>JavaScript</div>
-            </div>
-        </div>
-    </section>
-    <section class="experiance">
-        <div class="experiance-block">
-            <h3 class="job-title">QA</h3>
-            <h3 class="company-name">NN Group - Den Haag, The Netherlands</h3>
-            <p class="dates">Jun 6 - Jun 11</p>
-            <p>Bla bla bla blab</p>
-        </div>
-        <div class="experiance-block">
-            <h3 class="job-title">QA</h3>
-            <h3 class="company-name">NN Group - Den Haag, The Netherlands</h3>
-            <p class="dates">Jun 6 - Jun 11</p>
-            <p>Bla bla bla blab</p>
-        </div>
-        <div class="experiance-block">
-            <h3 class="job-title">QA</h3>
-            <h3 class="company-name">NN Group - Den Haag, The Netherlands</h3>
-            <p class="dates">Jun 6 - Jun 11</p>
-            <p>Bla bla bla blab</p>
-        </div>
-        <div class="experiance-block">
-            <h3 class="job-title">QA</h3>
-            <h3 class="company-name">NN Group - Den Haag, The Netherlands</h3>
-            <p class="dates">Jun 6 - Jun 11</p>
-            <p>Bla bla bla blab</p>
-        </div>
-    </section>
-    <section class="contact">
-        <form>
+            <div class="skills-list flex ">
+                <div class="skills-single flex js">
+                    <div class="sprite js"></div>
+                    <div>JavaScript</div>
+                </div>
 
-        </form>
-    </section>
+                <div class="skills-single flex ts">
+                    <div class="sprite ts"></div>
+                    <div>TypeScript</div>
+                </div>
+
+                <div class="skills-single flex git">
+                    <div class="sprite git"></div>
+                    <div>Git/GitHub</div>
+                </div>
+
+                <div class="skills-single flex playwright">
+                    <div class="sprite playwright"></div>
+                    <div>Playwright</div>
+                </div>
+
+                <div class="skills-single flex cypress">
+                    <div class="sprite cypress"></div>
+                    <div>Cypress</div>
+                </div>
+
+                <div class="skills-single flex postman">
+                    <div class="sprite postman"></div>
+                    <div>Postman</div>
+                </div>
+
+                <div class="skills-single flex cicd">
+                    <div class="sprite cicd"></div>
+                    <div>CI/CD</div>
+                </div>
+
+                <div class="skills-single flex htmlcss">
+                    <div class="sprite htmlcss"></div>
+                    <div>HTML/CSS</div>
+                </div>
+
+                <div class="skills-single flex jira">
+                    <div class="sprite jira"></div>
+                    <div>Jira</div>
+                </div>
+
+                <div class="skills-single flex azure">
+                    <div class="sprite azure"></div>
+                    <div>Azure</div>
+                </div>
+
+                <div class="skills-single flex graphql">
+                    <div class="sprite graphql"></div>
+                    <div>GraphQL (basics)</div>
+                </div>
+
+                <div class="skills-single flex api">
+                    <div class="sprite api"></div>
+                    <div>API testing</div>
+                </div>
+
+                <div class="skills-single flex testtools">
+                    <div class="sprite testtools"></div>
+                    <div>TestRail, QASE, Zephyr, TestLink</div>
+                </div>
+
+                <div class="skills-single flex datadog">
+                    <div class="sprite datadog"></div>
+                    <div>Datadog</div>
+                </div>
+
+                <div class="skills-single flex functional">
+                    <div class="sprite functional"></div>
+                    <div>Functional testing</div>
+                </div>
+
+                <div class="skills-single flex mobile">
+                    <div class="sprite mobile"></div>
+                    <div>Mobile testing</div>
+                </div>
+
+                <div class="skills-single flex load">
+                    <div class="sprite load"></div>
+                    <div>Learning: Load testing</div>
+                </div>
+            </div>
+
+            <div class="interests-list flex hidden">
+                <div class="interests-single flex cat">
+                    <div class="sprite cat"></div>
+                    <div>My cat</div>
+                </div>
+
+                <div class="interests-single flex gym">
+                    <div class="sprite gym"></div>
+                    <div>Gym</div>
+                </div>
+
+                <div class="interests-single flex travel">
+                    <div class="sprite travel"></div>
+                    <div>Traveling</div>
+                </div>
+
+                <div class="interests-single flex organize">
+                    <div class="sprite organize"></div>
+                    <div>Space organization</div>
+                </div>
+
+                <div class="interests-single flex cooking">
+                    <div class="sprite cooking"></div>
+                    <div>Cooking</div>
+                </div>
+
+                <div class="interests-single flex walking">
+                    <div class="sprite walking"></div>
+                    <div>Walking</div>
+                </div>
+
+                <div class="interests-single flex music">
+                    <div class="sprite music"></div>
+                    <div>Music</div>
+                </div>
+
+                <div class="interests-single flex craft">
+                    <div class="sprite craft"></div>
+                    <div>Craft: painting, clay</div>
+                </div>
+
+                <div class="interests-single flex gaming">
+                    <div class="sprite gaming"></div>
+                    <div>Gaming sometimes</div>
+                </div>
+            </div>
+        </section>
+        <section class="projects">
+            <h2 class="section-title">Projects</h2>
+            <div class="project-list flex">
+                <div class="project-single flex">
+                    <div class="project-photo"><img src="./data/testora_thumbnail.png" alt="img"></div>
+                    <div class="project-info flex">
+                        <h3>Testora</h3>
+                        <p>Inspired by <a href="https://qase.io/">QASE</a>, I designed and implemented my own simplified
+                            test management interface
+                            tailored for front-end development courses</p>
+                        <div class="project-stack flex">
+                            <div>HTML5</div>
+                            <div>FlexBox</div>
+                            <div>Grid</div>
+                            <div>JavaScript</div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="project-single flex">
+                    <div class="project-photo"><img src="./data/testora_thumbnail.png" alt="img"></div>
+                    <div class="project-info flex">
+                        <h3>Personal website</h3>
+                        <p>My small personal website</p>
+                        <div class="project-stack flex">
+                            <div>HTML5</div>
+                            <div>FlexBox</div>
+                            <div>Grid</div>
+                            <div>JavaScript</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+        <section class="experience">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience-list flex">
+                <div class="experience-block">
+                    <h3 class="job-title">Senior QA Engineer </h3>
+                    <h3 class="company-name">NN Group - Den Haag, The Netherlands</h3>
+                    <p class="dates">Jun 2024 — Jan 2026</p>
+                    <p>I worked with different teams to build and improve QA processes and created automation from
+                        scratch with Playwright. I also mentored QA engineers and helped teams release faster with more
+                        confidence.</p>
+                </div>
+                <div class="experience-block">
+                    <h3 class="job-title">Senior QA Engineer</h3>
+                    <h3 class="company-name">Rodeo Software - Amsterdam, The Netherlands</h3>
+                    <p class="dates">Sept 2023 — May 2024</p>
+                    <p>I built a Cypress automation framework from scratch, connected it with CI/CD and test case
+                        management, and set up regression testing for the whole project. I also added GraphQL API
+                        automation and kept test coverage complete and up to date.</p>
+                </div>
+                <div class="experience-block">
+                    <h3 class="job-title">Automation QA Engineer</h3>
+                    <h3 class="company-name">Lemonade - Amsterdam, The Netherlands</h3>
+                    <p class="dates">Nov 2021 — Aug 2023</p>
+                    <p>I created another Cypress framework, worked on API testing with Postman, and led quality
+                        processes inside my squad. I mentored newcomers and ran small workshops on automation and QA
+                        practices.</p>
+                </div>
+                <div class="experience-block">
+                    <h3 class="job-title">QA Team Lead</h3>
+                    <h3 class="company-name">EPAM Systems - Minsk, Belarus</h3>
+                    <p class="dates">Mar 2019 - Apr 2021</p>
+                    <p>I grew from junior to lead in 1.5 years, worked directly with customers, managed issues, and
+                        helped make go/no-go release decisions. I tested streaming platforms across web, mobile, APIs,
+                        and devices, and handled complex bug triage and test case management.</p>
+                </div>
+            </div>
+
+        </section>
+        <section class="contact">
+            <div class="hidden">
+                <h2 class="section-title">Let&rsquo;s connect</h2>
+                <form class="flex">
+                    <div class="contact-data flex">
+                        <div><input type="text"></div>
+                        <div>
+                            <input type="email" name="" id="">
+                        </div>
+                    </div>
+                    <div><textarea name="" id=""></textarea></div>
+                    <div><button type="submit">Let&rsquo;s connect</button></div>
+                </form>
+            </div>
+        </section>
+        <section class="footer flex">
+            <div class="contact-options flex">
+                <div><a href="mailto:yuliya.kazakevich9@gmail.com"><img src="./data/email-icon.png" alt=""></a>
+                </div>
+                <div><a href="https://github.com/Yuloi" target="_blank"><img src="./data/GitHub_Invertocat_Black.png"
+                            alt=""></a></div>
+            </div>
+            <div class="text"> Build with &#9825; by Yuliya Kazakevich</div>
+        </section>
+    </div>
+
 </body>
 
 </html>
