@@ -158,32 +158,33 @@ nav {
     background-position: -235px -69px; }
 .sprite.cypress   { background-position: -310px -69px; }
 
-.sprite.postman   { background-position: -40px  -138px; }
+.sprite.postman   { background-position: -41px  -138px; }
 .sprite.cicd      { background-position: -110px -138px; }
 .sprite.htmlcss   { background-position: -175px -138px; }
 .sprite.jira      { background-position: -240px -138px; }
 .sprite.azure     { background-position: -175px -207px; }
 
-.sprite.graphql   { background-position: -40px  -207px; }
+.sprite.graphql   { background-position: -40px  -205px; }
 .sprite.api       { background-position: -110px -207px; }
-.sprite.testtools { background-position: -310px -138px; }
+.sprite.testtools { background-position: -310px -135px; }
 .sprite.datadog   {    width: 60px;
     height: 55px; background-position: -240px -207px; }
 .sprite.functional{    width: 60px;
     height: 55px; background-position: -175px  -270px; }
-
 .sprite.mobile    { background-position: -240px -268px; }
 .sprite.load      { background-position: -310px  -270px; }
-.sprite.cat       { background-position: -250px -207px; }
-.sprite.gym       { background-position: -320px -207px; }
-.sprite.travel    { background-position: -390px -207px; }
 
-.sprite.organize  { background-position: -460px -207px; }
-.sprite.cooking   { background-position: -40px  -276px; }
-.sprite.walking   { background-position: -110px -276px; }
-.sprite.music     { background-position: -180px -276px; }
-.sprite.craft     { background-position: -250px -276px; }
-.sprite.gaming    { background-position: -320px -276px; }
+.sprite.cat       { background-position: -40px -270px; }
+.sprite.gym       {    width: 60px; background-position: -110px -393px; }
+.sprite.travel    { background-position: -175px -393px; }
+
+.sprite.organize  { background-position: -175px -330px; }
+.sprite.cooking   { background-position: -240px -450px; }
+.sprite.walking   { width: 60px;background-position: -240px -330px; }
+
+.sprite.music     { background-position: -40px -450px; }
+.sprite.craft     { background-position: -110px -450px; }
+.sprite.gaming    {width: 60px; background-position: -309px -450px; }
 
 /* Projects */
 
