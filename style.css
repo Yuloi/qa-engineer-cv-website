@@ -311,7 +311,7 @@ input,textarea,button {
         top: 0;
         left: 0;
         width: 100%;
-        min-height: fit-content;
+        height: fit-content;
     }
     .project-list {
         width: 100%;
@@ -327,7 +327,7 @@ input,textarea,button {
 @media screen and (max-width:600px) {
     nav {
         flex-wrap: wrap;
-        min-height: fit-content;
+        height: fit-content;
         padding-top: 3px ;
     }
     nav > div {
@@ -339,5 +339,8 @@ input,textarea,button {
     }
     .project-stack {
         flex-wrap: wrap;
+    }
+    .main-hero .bio{
+        padding-left: 0rem;
     }
 }
